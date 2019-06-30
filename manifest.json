@@ -1,0 +1,14 @@
+{
+  "name": "Github LoadAllDiffs",
+  "manifest_version": 2,
+  "version": "0.0.1",
+  "description": "Add \"Load all diffs\" button for Github PRs",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*/*"],
+      "js": ["jquery-1.12.0.min.js","content_script.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "icons": { "128": "icon128.png" }
+}
